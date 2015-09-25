@@ -13,6 +13,7 @@
 		79AB3A431BB5982600B00A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79AB3A421BB5982600B00A3D /* Assets.xcassets */; };
 		79AB3A461BB5982600B00A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79AB3A441BB5982600B00A3D /* LaunchScreen.storyboard */; };
 		79AB3A511BB5982600B00A3D /* TestCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AB3A501BB5982600B00A3D /* TestCITests.swift */; };
+		79AB3A5C1BB5982600B00A3D /* TestCIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AB3A5B1BB5982600B00A3D /* TestCIUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		79AB3A501BB5982600B00A3D /* TestCITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCITests.swift; sourceTree = "<group>"; };
 		79AB3A521BB5982600B00A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79AB3A571BB5982600B00A3D /* TestCIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79AB3A5B1BB5982600B00A3D /* TestCIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCIUITests.swift; sourceTree = "<group>"; };
+		79AB3A5D1BB5982600B00A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,7 @@
 			children = (
 				79AB3A3A1BB5982600B00A3D /* TestCI */,
 				79AB3A4F1BB5982600B00A3D /* TestCITests */,
+				79AB3A5A1BB5982600B00A3D /* TestCIUITests */,
 				79AB3A391BB5982600B00A3D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,6 +114,15 @@
 				79AB3A521BB5982600B00A3D /* Info.plist */,
 			);
 			path = TestCITests;
+			sourceTree = "<group>";
+		};
+		79AB3A5A1BB5982600B00A3D /* TestCIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79AB3A5B1BB5982600B00A3D /* TestCIUITests.swift */,
+				79AB3A5D1BB5982600B00A3D /* Info.plist */,
+			);
+			path = TestCIUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79AB3A5C1BB5982600B00A3D /* TestCIUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: David McQueen (33E93D9H5M)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David McQueen (9YA6YF2Y4R)";
 				INFOPLIST_FILE = TestCI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.uk.dmcqueen.TestCI;
@@ -397,7 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: David McQueen (33E93D9H5M)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David McQueen (9YA6YF2Y4R)";
 				INFOPLIST_FILE = TestCI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.uk.dmcqueen.TestCI;
