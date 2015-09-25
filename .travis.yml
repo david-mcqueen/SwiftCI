@@ -1,11 +1,32 @@
-language: objective-c
+# http://docs.travis-ci.com/user/languages/objective-c/
+# https://github.com/facebook/xctool
 
-branches:
-only:
-- master
+language: objective-c
 
 osx_image: xcode7
 
+# xcode_project: SampleNotifcations/SampleNotifcations.xcodeproj
+# xcode_workspace: SampleNotifcations/SampleNotifcations.xcworkspace
 
-xcode_project: TestCI.xcodeproj # path to your xcodeproj folder
-xcode_scheme: TestCI
+# xcode_scheme: SampleNotifcationsTests
+
+podfile: SampleNotifcations/Podfile
+
+# xcode_sdk: iphonesimulator9.0
+
+script:
+
+  xctool
+  -project TestCI.xcodeproj
+  -scheme TestCI
+  -sdk iphonesimulator
+  -destination 'platform=iOS Simulator,name=iPhone 6 Plus'
+  build 
+  test
+  ONLY_ACTIVE_ARCH=NO
+  CODE_SIGN_IDENTITY=""
+  CODE_SIGNING_REQUIRED=NO
+
+before_install:
+  - brew update
+  - brew uninstall xctool && brew install --HEAD xctool
