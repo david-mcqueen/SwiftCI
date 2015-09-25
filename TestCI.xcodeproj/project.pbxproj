@@ -192,6 +192,7 @@
 				TargetAttributes = {
 					79AB3A371BB5982600B00A3D = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 9YA6YF2Y4R;
 					};
 					79AB3A4B1BB5982600B00A3D = {
 						CreatedOnToolsVersion = 7.0;
@@ -398,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David McQueen (9YA6YF2Y4R)";
 				INFOPLIST_FILE = TestCI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.uk.dmcqueen.TestCI;
@@ -409,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David McQueen (9YA6YF2Y4R)";
 				INFOPLIST_FILE = TestCI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.uk.dmcqueen.TestCI;
