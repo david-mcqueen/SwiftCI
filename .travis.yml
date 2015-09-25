@@ -19,7 +19,7 @@ script:
   xctool
   -project TestCI.xcodeproj
   -scheme TestCI
-  -sdk iphonesimulator
+  -sdk iphonesimulator9.0
   -destination 'platform=iOS Simulator,name=iPhone 6 Plus'
   build 
   test
